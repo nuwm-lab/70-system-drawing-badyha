@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Run (project)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      // Launch using the dotnet CLI so VS Code UI variants that prefer 'run project' work
+      "program": "dotnet",
+      "args": ["run", "--project", "${workspaceFolder}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": ".NET Launch (dll)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/net10.0-windows/LabWork.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

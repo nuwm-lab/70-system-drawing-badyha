@@ -1,0 +1,8 @@
+{
+  // Helpful workspace settings for C# development in this repo
+  "files.exclude": {
+    "**/bin": false,
+    "**/obj": false
+  },
+  "csharp.suppressDotnetRestoreMessage": true
+}
